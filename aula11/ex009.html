@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Nacionalidade</title>
+</head>
+<body>
+    <h1>Você é de qual pais?</h1> <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="seguir" onclick="qualpais()">
+    <div id="res">
+
+    </div>
+
+<script>
+    
+
+    function qualpais() {
+        const pais = document.getElementById("txtpais");
+        const resp = document.getElementById("res");
+        const resposta = pais.value;
+
+        if(resposta == 'brasil'){
+            resp.innerHTML = '<p/>brasileiro'
+        }else{
+            resp.innerHTML = '<p/>gringo'
+        }
+    }
+</script>
+
+</body>
+</html>
